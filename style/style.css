@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: outfit;
+}
+
+
+:root{
+    --SoftBlue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--mainBG);
+    font-size: 18px;
+}
+.container{
+    background-color: var(--cardBG);
+    width: 200px;
+    height: 350px;
+    margin: 50px auto;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.main-img{
+    padding: 2.5px;
+    width: 180px;
+    height: 180px;
+    border-radius: 15px;
+    cursor: pointer;
+    z-index: 3;
+    position: absolute;
+    
+}
+.back-color{
+    position: relative;
+}
+.color{
+    width: 175px;
+    height: 175px;
+    background-color: rgba(43, 229, 236, 0.534);
+    border-radius: 15px;
+    position: relative;
+    z-index: 2;
+    top:3px;
+    right: -2px;
+}
+.icon{
+    position: absolute;
+    width: 30px;
+    top: 80px;
+    left: 75px;
+    z-index: 2;
+    /* visibility: hidden; */
+}
+.main-img:hover{
+    z-index: 1;
+}
+.title:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+.title,span{
+    color: var(--White);
+    font-size: 14px;
+}
+span:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+p{
+    color: rgba(255, 255, 255, 0.178);
+    font-size: 11px;
+    margin-bottom: 2px;
+}
+.eth{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.178);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.eth .color-ch{
+    color: var(--Cyan);
+}
+.creator{
+    /* display: flex; */
+    position: relative;
+}
+.creator img{
+    width: 20px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    
+    
+}
+
+.creator p{
+    display: inline;
+    font-size: 9px;
+    position: absolute;
+    margin-left: 10px;
+    top: -2.5px;
+}
+.creator span{
+    font-size: 9px;
+}
+.fa-ethereum{
+    padding: 0;
+    margin: 0;
+}
+.main-img:hover{
+    
+}
